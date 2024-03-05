@@ -23,6 +23,23 @@
     font-style: normal;
 }
 
+.nav-base h1 {
+    color: #000;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#container_categorias h2,
+.footer-dgames h2 {
+    color: #000;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+
+}
+
 .boton1,
 .boton2,
 .boton3,
@@ -52,6 +69,7 @@
 #container_duoc_juegos img {
     max-width: 100%;
     width: 100%;
+
 }
 
 
@@ -73,13 +91,14 @@
 .categorias img {
     max-width: 400px;
     transition: ease-in-out 0.5s;
+    border-radius: 25px;
     /* max-height: 300px; */
 }
 
 .categorias img:hover {
-    max-width: 400px;
     transform: scale(1.05);
     transition: ease-in-out 0.5s;
+    border-radius: 25px;
 }
 
 
