@@ -5,3 +5,93 @@
     font-size: 16px;
     text-align: center;
 }
+
+.nav-base {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.nav-base p {
+    color: #fff;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boton1,
+.boton2,
+.boton3,
+.boton4 {
+    padding: 0 30px;
+    background-color: #154295;
+    border-radius: 15px;
+    transition: ease-in-out 0.5s;
+}
+
+.boton1:hover,
+.boton2:hover,
+.boton3:hover,
+.boton4:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+
+#container_duoc_juegos a,
+#container_categorias a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+#container_duoc_juegos img {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.footer-dgames {
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+.categorias-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.categorias img {
+    max-width: 400px;
+    transition: ease-in-out 0.5s;
+    /* max-height: 300px; */
+}
+
+.categorias img:hover {
+    max-width: 400px;
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+
+.categorias p {
+    color: #000;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+/* ESTILOS DESKTOP */
+@media only screen and (min-width: 768px) {}
+
+/* ESTILOS DESKTOP */
