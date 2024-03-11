@@ -37,8 +37,10 @@
     font-weight: 400;
     font-style: normal;
     font-size: 2em;
-
 }
+
+
+
 
 .boton1,
 .boton2,
@@ -61,17 +63,26 @@
 
 #container_duoc_juegos a,
 #container_categorias a,
-.container-categoria-terror a {
+.container-categoria-aventuras a,
+.container-catgoria-accion a,
+.container-categoria-deportes a,
+.container-categoria-terror a,
+.container-categoria-simulacion a {
     text-decoration: none;
     cursor: pointer;
     color: #000;
 }
 
 #container_duoc_juegos img,
-.container-categoria-terror img {
+.container-categoria-aventuras img,
+.container-catgoria-accion img,
+.container-categoria-deportes img,
+.container-categoria-terror img,
+.container-categoria-simulacion img {
     max-width: 100%;
     width: 100%;
 }
+
 
 
 .footer-dgames {
@@ -89,14 +100,22 @@
 }
 
 .categorias img,
-.juegos-terror img {
+.juegos-terror img, 
+.juegos-aventuras img,
+.juegos-accion img,
+.juegos-deportes img,
+.juegos-simulacion img {
     max-width: 400px;
     transition: ease-in-out 0.5s;
     border-radius: 25px;
 }
 
 .categorias img:hover,
-.juegos-terror img:hover {
+.juegos-aventuras img:hover,
+.juegos-terror img:hover,
+.juegos-accion img:hover,
+.juegos-deportes img:hover,
+.juegos-simulacion img:hover  {
     transform: scale(1.05);
     transition: ease-in-out 0.5s;
     border-radius: 25px;
@@ -104,7 +123,11 @@
 
 
 .categorias p,
-.juegos-terror p {
+.juegos-aventuras p,
+.juegos-terror p,
+.juegos-accion p,
+.juegos-deportes p,
+.juegos-simulacion p {
     color: #000;
     font-family: "Anta", sans-serif;
     font-weight: 400;
@@ -112,16 +135,18 @@
     font-size: 1.3em;
 }
 
+.descripcion-juegos {
+    color:#000;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
 
 
-
-
-
-
-
-/* TERROR */
-
-.juegos-terror {
+.juegos-terror,
+.juegos-aventuras,
+.juegos-accion,
+.juegos-deportes, 
+.juegos-simulacion {
     display: flex;
     max-width: 1200px;
     margin: auto;
@@ -129,13 +154,21 @@
     gap: 50px;
 }
 
-.juegos-terror {
+.juegos-terror,
+.juegos-aventuras,
+.juegos-accion,
+.juegos-deportes,
+.juegos-simulacion  {
     display: flex;
     align-items: center;
     align-content: center;
 }
 
-.juegos-terror img {
+.juegos-terror img,
+.juegos-aventuras img,
+.juegos-accion img,
+.juegos-deportes img, 
+.juegos-simulacion img {
     max-height: 400px;
 }
 
@@ -146,9 +179,9 @@
     color: transparent;
 }
 
-/* TERROR */
+
+
 
 /* ESTILOS DESKTOP */
 @media only screen and (min-width: 768px) {}
-
 /* ESTILOS DESKTOP */
