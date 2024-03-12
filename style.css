@@ -7,13 +7,14 @@
 }
 
 .nav-base {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    display: grid;
+    padding: 5px;
     align-items: center;
     border: 2px solid #000;
     border-radius: 15px;
-    margin: 10px;
+    margin: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
 }
 
 .nav-base p {
@@ -38,9 +39,6 @@
     font-style: normal;
     font-size: 2em;
 }
-
-
-
 
 .boton1,
 .boton2,
@@ -67,7 +65,8 @@
 .container-catgoria-accion a,
 .container-categoria-deportes a,
 .container-categoria-terror a,
-.container-categoria-simulacion a {
+.container-categoria-simulacion a,
+.container-contacto a {
     text-decoration: none;
     cursor: pointer;
     color: #000;
@@ -180,9 +179,24 @@
 }
 
 
+.container-form-dgames {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
 
 
 /* ESTILOS DESKTOP */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+    .nav-base {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+        margin: 10px;
+        gap: 20px;
+    }
+
+}
 
 /* ESTILOS DESKTOP */
