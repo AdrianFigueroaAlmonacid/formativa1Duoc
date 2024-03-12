@@ -37,7 +37,6 @@
     font-weight: 400;
     font-style: normal;
     font-size: 2em;
-
 }
 
 .boton1,
@@ -112,7 +111,6 @@
     font-size: 1.3em;
 }
 
-
 /* TERROR */
 
 .juegos-terror {
@@ -123,11 +121,7 @@
     gap: 50px;
 }
 
-.juegos-terror {
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
+
 
 .juegos-terror img {
     max-height: 400px;
