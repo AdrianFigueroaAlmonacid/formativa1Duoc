@@ -35,90 +35,79 @@ formularioDgames.addEventListener("submit", (e) => {
     alertSuccess.classList.add("d-none");
     const errores = [];
 
-    // let namePerson = inputName.value.trim();
-    // // validar nombre
-    // if (!regUserName.test(inputName.value) || !namePerson) {
-    //     inputName.classList.add("is-invalid");
 
-    //     errores.push({
-    //         tipo: alertName,
-    //         msg: "Formato no válido campo nombre, solo letras",
-    //     });
-    // } else {
-    //     inputName.classList.remove("is-invalid");
-    //     inputName.classList.add("is-valid");
-    //     alertName.classList.add("d-none");
-    // }
+    // VALIDAR NOMBRE
+    const valorInput = inputName.value.trim(); // Elimina espacios en blanco al inicio y al final
+
+    if (regUserName.test(valorInput)) {
+        console.log("El input contiene solo letras.");
+        // Aquí puedes realizar otras acciones si el input es válido
+    } else {
+        console.log("El input no cumple con el formato de letras.");
+        // Aquí puedes mostrar un mensaje de error o realizar otras acciones si el input no es válido
+    }
 
 
-    const miInput = document.getElementById("miInput");
-    const regExpLetras = /^[A-Za-z]+$/;
+    // VALIDAR APELLIDO
+    const valorInput2 = inputName.value.trim(); // Elimina espacios en blanco al inicio y al final
 
-    // Evento para validar cuando se pierde el foco del input
-    inputName.addEventListener("blur", () => {
-        const valorInput = miInput.value.trim(); // Elimina espacios en blanco al inicio y al final
-
-        if (regUserName.test(valorInput)) {
-            console.log("El input contiene solo letras.");
-            // Aquí puedes realizar otras acciones si el input es válido
-        } else {
-            console.log("El input no cumple con el formato de letras.");
-            // Aquí puedes mostrar un mensaje de error o realizar otras acciones si el input no es válido
-        }
-    });
-
+    if (regUserName.test(valorInput2)) {
+        console.log("El input contiene solo letras.");
+        // Aquí puedes realizar otras acciones si el input es válido
+    } else {
+        console.log("El input no cumple con el formato de letras.");
+        // Aquí puedes mostrar un mensaje de error o realizar otras acciones si el input no es válido
+    }
 
 
 
     // validar apellido
-    if (!regUserName.test(inputLastName.value) || !inputLastName.value.trim()) {
-        inputLastName.classList.add("is-invalid");
+    // if (!regUserName.test(inputLastName.value) || !inputLastName.value.trim()) {
+    //     inputLastName.classList.add("is-invalid");
 
-        errores.push({
-            tipo: alertName,
-            msg: "Formato no válido campo apellido, solo letras",
-        });
-    } else {
-        inputLastName.classList.remove("is-invalid");
-        inputLastName.classList.add("is-valid");
-        alertName.classList.add("d-none");
-    }
+    //     errores.push({
+    //         tipo: alertName,
+    //         msg: "Formato no válido campo apellido, solo letras",
+    //     });
+    // } else {
+    //     inputLastName.classList.remove("is-invalid");
+    //     inputLastName.classList.add("is-valid");
+    //     alertName.classList.add("d-none");
+    // }
 
-    // validar email
-    if (!regUserEmail.test(inputEmail.value) || !inputEmail.value.trim()) {
-        inputEmail.classList.add("is-invalid");
 
-        errores.push({
-            tipo: alertEmail,
-            msg: "Escriba un correo válido",
-        });
-    } else {
-        inputEmail.classList.remove("is-invalid");
-        inputEmail.classList.add("is-valid");
-        alertEmail.classList.add("d-none");
-    }
 
     // validar email
-    if (!regUserEmail.test(inputEmail.value) || !inputEmail.value.trim()) {
-        inputEmail.classList.add("is-invalid");
+    // if (!regUserEmail.test(inputEmail.value) || !inputEmail.value.trim()) {
+    //     inputEmail.classList.add("is-invalid");
 
-        errores.push({
-            tipo: alertEmail,
-            msg: "Escriba un correo válido",
-        });
-    } else {
-        inputEmail.classList.remove("is-invalid");
-        inputEmail.classList.add("is-valid");
-        alertEmail.classList.add("d-none");
-    }
+    //     errores.push({
+    //         tipo: alertEmail,
+    //         msg: "Escriba un correo válido",
+    //     });
+    // } else {
+    //     inputEmail.classList.remove("is-invalid");
+    //     inputEmail.classList.add("is-valid");
+    //     alertEmail.classList.add("d-none");
+    // }
 
 
 
     // validar contraseña
 
-    if (inputPassword == inputPassword2) {
+    if (inputPassword.value.trim() === inputPassword2.value.trim()) {
+        // inputEmail.classList.remove("is-invalid");
+        // inputEmail.classList.add("is-valid");
+        // alertEmail.classList.add("d-none");
+        console.log("contraseña ok");
 
 
+    } else {
+        // errores.push({
+        //     tipo: alertEmail,
+        //     msg: "las contraseñas deben ser iguales",
+        // });
+        console.log("contraseña mal");
 
     }
 
