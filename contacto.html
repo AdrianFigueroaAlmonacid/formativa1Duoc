@@ -44,43 +44,52 @@
         <!-- NAV BAR -->
 
         <div class="container-form-dgames">
+            <form action="" method="post" id="formulario-dgames" class="text-start  row g-3">
 
-            <form id="formulario-dgames" class="text-start  row g-3">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Nombre</label>
                     <input type="text" required class="form-control" id="inputName" placeholder="Anakin">
+                    <small class="text-danger" id="nombre-error"></small>
                 </div>
 
                 <div class="col-md-6">
                     <label for="inputLastName" class="form-label">Apellido</label>
                     <input type="text" required class="form-control" id="inputLastName" placeholder="Skywalker">
+                    <small class="text-danger" id="apellido-error"></small>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="autoSizingInputGroup" class="form-label">Nombre Usuario</label>
-                    <label class="visually-hidden" for="autoSizingInputGroup">Usuario</label>
+                    <label for="inputUser" class="form-label">Nombre Usuario</label>
+                    <label class="visually-hidden" for="inputUser">Usuario</label>
                     <div class="input-group">
                         <div class="input-group-text">@</div>
-                        <input type="text" required class="form-control" id="autoSizingInputGroup"
-                            placeholder="Username">
+                        <input type="text" required class="form-control" id="inputUser" placeholder="Username">
+                        <small class="text-danger" id="usuario-error"></small>
+
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <label for="inputEmail" class="form-label">Correo electronico</label>
                     <input type="email" required class="form-control" id="inputEmail">
+                    <small class="text-danger" id="email-error"></small>
+
                 </div>
 
                 <div class="col-md-6">
                     <label for="inputPassword" class="form-label">Contraseña</label>
                     <input type="password" minlength="6" maxlength="18" required class="form-control"
                         id="inputPassword">
+                    <small class="text-danger" id="password1-error"></small>
+
                 </div>
 
                 <div class="col-md-6">
                     <label for="inputPassword2" class="form-label">Repetir Contraseña</label>
                     <input type="password" minlength="6" maxlength="18" required class="form-control"
                         id="inputPassword2">
+                    <small class="text-danger" id="password2-error"></small>
+
                 </div>
 
                 <div class="col-md-6">
@@ -91,6 +100,8 @@
                 <div class="col-md-6">
                     <label for="inputAddress" class="form-label">Direccion de despacho</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="Alameda 123">
+                    <small class="text-danger" id="despacho-error"></small>
+
                 </div>
 
 
@@ -101,8 +112,9 @@
                 <div class="col-6">
                     <button type="" class="btn btn-primary">Limpiar</button>
                 </div>
-
                 <div class="alert alert-success mt-2 d-none" id="alertSuccess"></div>
+
+
             </form>
 
         </div>

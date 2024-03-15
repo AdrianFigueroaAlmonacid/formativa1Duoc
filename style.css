@@ -58,7 +58,6 @@
     transition: ease-in-out 0.5s;
 }
 
-
 #container_duoc_juegos a,
 #container_categorias a,
 .container-categoria-aventuras a,
@@ -81,7 +80,6 @@
     max-width: 100%;
     width: 100%;
 }
-
 
 
 .footer-dgames {
@@ -140,7 +138,6 @@
     font-family: sans-serif;
 }
 
-
 .juegos-terror,
 .juegos-aventuras,
 .juegos-accion,
@@ -178,13 +175,11 @@
     color: transparent;
 }
 
-
 .container-form-dgames {
     max-width: 1000px;
     margin: 100px auto;
     padding: 20px;
 }
-
 
 
 /* ESTILOS DESKTOP */
