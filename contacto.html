@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-
     <div class="container-contacto">
         <!-- NAV BAR -->
 
@@ -45,6 +43,7 @@
 
         <div class="container-form-dgames">
             <form action="" method="post" id="formulario-dgames" class="text-start  row g-3">
+                <div class="alert alert-success mt-2 d-none" id="alertSuccess"></div>
 
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Nombre</label>
@@ -97,6 +96,7 @@
                     <input type="date" required class="form-control" id="inputDate">
                 </div>
 
+
                 <div class="col-md-6">
                     <label for="inputAddress" class="form-label">Direccion de despacho</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="Alameda 123">
@@ -110,18 +110,11 @@
                 </div>
 
                 <div class="col-6">
-                    <button type="" class="btn btn-primary">Limpiar</button>
+                    <!-- <button type="" class="btn btn-primary">Limpiar</button> -->
+                    <button id="botonLimpiar" class="btn btn-primary">Limpiar</button>
                 </div>
-                <div class="alert alert-success mt-2 d-none" id="alertSuccess"></div>
-
-
             </form>
-
         </div>
-
-
-
-
     </div>
 
 

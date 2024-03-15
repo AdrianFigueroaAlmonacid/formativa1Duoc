@@ -3,10 +3,12 @@ const formularioDgames = document.getElementById("formulario-dgames");
 const inputName = document.getElementById("inputName");
 const inputLastName = document.getElementById("inputLastName");
 const inputUser = document.getElementById("inputUser");
-// const inputEmail = document.getElementById("inputEmail");
+const inputEmail = document.getElementById("inputEmail");
 const inputPassword = document.getElementById("inputPassword");
 const inputPassword2 = document.getElementById("inputPassword2");
 const inputDate = document.getElementById("inputDate");
+const inputAddress = document.getElementById("inputAddress");
+
 
 
 const alertSuccess = document.getElementById("alertSuccess");
@@ -26,18 +28,18 @@ const mensajeExito = () => {
     alertSuccess.textContent = "Mensaje enviado con éxito";
 };
 
-const mensajeError = (errores) => {
-    errores.forEach((item) => {
-        item.tipo.classList.remove("d-none");
-        item.tipo.textContent = item.msg;
-    });
-};
+// const mensajeError = (errores) => {
+//     errores.forEach((item) => {
+//         item.tipo.classList.remove("d-none");
+//         item.tipo.textContent = item.msg;
+//     });
+// };
 
 formularioDgames.addEventListener("submit", (e) => {
     e.preventDefault();
 
     alertSuccess.classList.add("d-none");
-    const errores = [];
+    // const errores = [];
 
     document.getElementById('nombre-error').innerHTML = '';
     document.getElementById('apellido-error').innerHTML = '';
@@ -88,31 +90,97 @@ formularioDgames.addEventListener("submit", (e) => {
 
     }
 
-    // VALIDAR USER
-    if (inputUser.value.trim().length > 0) {
-        inputUser.classList.add("is-valid");
-    } else {
-        inputUser.classList.add("is-invalid");
+
+    // VALIDAR MAIL y USER
+
+    let inputs = document.querySelectorAll('.form-control');
+
+    inputs.forEach(function (input) {
+        if (input.value.trim().length > 0) {
+            input.classList.add("is-valid");
+        } else {
+            input.classList.add("is-invalid");
+        }
+    });
+
+    // VALIDAR CONTRASEÑA
+
+    // if (inputPassword2.value.trim() === inputPassword.value.trim()) {
+    //     console.log("contraseña ok");
+    //     inputPassword.classList.add("is-valid");
+    //     inputPassword2.classList.add("is-valid");
+    // } else {
+    //     inputPassword2.classList.add("is-invalid");
+    //     document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
+    //     console.log("contraseña mal");
+    // }
+
+
+    function validateForm() {
+        var inputPassword = document.getElementById("password");
+        var inputPassword2 = document.getElementById("password2");
+        var regPass = /^(?=.*[A-Z])(?=.*\d).+$/;
+
+        if (inputPassword.value.trim() === inputPassword2.value.trim() && regPass.test(inputPassword.value.trim())) {
+            console.log("contraseña ok");
+            inputPassword.classList.add("is-valid");
+            inputPassword2.classList.add("is-valid");
+            return true;
+        } else {
+            inputPassword2.classList.add("is-invalid");
+            document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
+            console.log("contraseña mal");
+            return false;
+        }
     }
 
+    document.getElementById('inputPassword2').addEventListener('change', validateForm);
 
-    // validar contraseña
 
-    if (inputPassword2.value.trim() === inputPassword.value.trim()) {
-        console.log("contraseña ok");
-        inputPassword.classList.add("is-valid");
-        inputPassword2.classList.add("is-valid");
-    } else {
-        inputPassword2.classList.add("is-invalid");
-        document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
-        console.log("contraseña mal");
+
+
+    // VALIDAR EDAD 
+    function validarEdad() {
+        let fechaInput = document.getElementById('inputDate').value;
+        let fechaNacimiento = new Date(fechaInput);
+        let fechaActual = new Date();
+        let edad = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
+        let mes = fechaActual.getMonth() - fechaNacimiento.getMonth();
+
+        if (mes < 0 || (mes === 0 && fechaActual.getDate() < fechaNacimiento.getDate())) {
+            edad--;
+            console.log('entro a comparacion edad');
+            console.log(edad);
+        }
+
+        if (edad >= 13) {
+            console.log("La edad es 13 o más.");
+        } else {
+            console.log("La edad es menor que 13.");
+        }
     }
 
+    document.getElementById('inputDate').addEventListener('change', validarEdad);
 
-    if (errores.length !== 0) {
-        mensajeError(errores);
-        return;
+
+    // LIMPIAR INPUTS
+    function limpiarInput() {
+        let inputs = document.querySelectorAll('.form-control');
+
+        inputs.forEach(function (input) {
+            input.value = '';
+            input.classList.remove("is-valid");
+            alertSuccess.classList.add("d-none");
+        });
     }
+    document.getElementById('botonLimpiar').addEventListener('click', limpiarInput);
+
+
+    // if (errores.length !== 0) {
+    //     mensajeError(errores);
+    //     return;
+    // }
+
 
     console.log("Formulario enviado con éxito");
     mensajeExito();
