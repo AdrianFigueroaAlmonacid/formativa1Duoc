@@ -195,3 +195,27 @@
 }
 
 /* ESTILOS DESKTOP */
+
+.juegos-terror,
+.juegos-aventuras,
+.juegos-accion,
+.juegos-deportes,
+.juegos-simulacion {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en dispositivos pequeños */
+    justify-content: center;
+    gap: 20px; /* Reduzco el espacio entre elementos en dispositivos pequeños */
+    padding: 10px; /* Agrego un poco de espacio interno para mejorar la legibilidad */
+}
+
+/* Media query para adaptar a dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .juegos-terror,
+    .juegos-aventuras,
+    .juegos-accion,
+    .juegos-deportes,
+    .juegos-simulacion {
+        max-width: 100%; /* Cambio el ancho máximo para que se ajuste al ancho del dispositivo */
+        padding: 5px; /* Reduzco el espacio interno en dispositivos pequeños */
+    }
+}
