@@ -105,36 +105,36 @@ formularioDgames.addEventListener("submit", (e) => {
 
     // VALIDAR CONTRASEÑA
 
-    // if (inputPassword2.value.trim() === inputPassword.value.trim()) {
-    //     console.log("contraseña ok");
-    //     inputPassword.classList.add("is-valid");
-    //     inputPassword2.classList.add("is-valid");
-    // } else {
-    //     inputPassword2.classList.add("is-invalid");
-    //     document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
-    //     console.log("contraseña mal");
+     if (inputPassword2.value.trim() === inputPassword.value.trim()) {
+         console.log("contraseña ok");
+        inputPassword.classList.add("is-valid");
+         inputPassword2.classList.add("is-valid");
+     } else {
+         inputPassword2.classList.add("is-invalid");
+        document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
+         console.log("contraseña mal");
+     }
+
+
+    // function validateForm() {
+    //     var inputPassword = document.getElementById("password");
+    //     var inputPassword2 = document.getElementById("password2");
+    //     var regPass = /^(?=.*[A-Z])(?=.*\d).+$/;
+
+    //     if (inputPassword.value.trim() === inputPassword2.value.trim() && regPass.test(inputPassword.value.trim())) {
+    //         console.log("contraseña ok");
+    //         inputPassword.classList.add("is-valid");
+    //         inputPassword2.classList.add("is-valid");
+    //         return true;
+    //     } else {
+    //         inputPassword2.classList.add("is-invalid");
+    //         document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
+    //         console.log("contraseña mal");
+    //         return false;
+    //     }
     // }
 
-
-    function validateForm() {
-        var inputPassword = document.getElementById("password");
-        var inputPassword2 = document.getElementById("password2");
-        var regPass = /^(?=.*[A-Z])(?=.*\d).+$/;
-
-        if (inputPassword.value.trim() === inputPassword2.value.trim() && regPass.test(inputPassword.value.trim())) {
-            console.log("contraseña ok");
-            inputPassword.classList.add("is-valid");
-            inputPassword2.classList.add("is-valid");
-            return true;
-        } else {
-            inputPassword2.classList.add("is-invalid");
-            document.getElementById('password2-error').innerHTML = 'Contraseña incorrecta';
-            console.log("contraseña mal");
-            return false;
-        }
-    }
-
-    document.getElementById('inputPassword2').addEventListener('change', validateForm);
+    //document.getElementById('inputPassword2').addEventListener('change', validateForm);
 
 
 
