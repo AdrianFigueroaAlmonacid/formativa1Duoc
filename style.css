@@ -82,7 +82,7 @@
     width: 100%;
 }
 
-/*AÑADIR BOTON DE COMPRA A LAS CATEGORIAS*/
+/*BOTON DE COMPRA A LAS CATEGORIAS*/
 
 .btn-outline-compra {
 color: #19c1db; 
@@ -105,8 +105,7 @@ font-size: 16px;
     transform: scale(0.95); /* Cambio de tamaño del botón al hacer clic */
   }
 
-
-/*AÑADIR BOTON*/
+/*BOTON DE COMPRA A LAS CATEGORIAS*/
 
 
 .footer-dgames {
@@ -122,8 +121,6 @@ font-size: 16px;
     max-width: 1000px;
     margin: auto;
 }
-
-
 
 
 .categorias img,

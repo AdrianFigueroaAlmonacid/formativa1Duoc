@@ -137,8 +137,6 @@ formularioDgames.addEventListener("submit", (e) => {
     //document.getElementById('inputPassword2').addEventListener('change', validateForm);
 
 
-
-
     // VALIDAR EDAD 
     function validarEdad() {
         let fechaInput = document.getElementById('inputDate').value;
