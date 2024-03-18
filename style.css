@@ -6,6 +6,7 @@
     text-align: center;
 }
 
+
 .nav-base {
     display: grid;
     padding: 5px;
@@ -18,14 +19,14 @@
 }
 
 .nav-base p {
-    color: #fff;
+    color: #fdfdfd;
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .nav-base h1 {
-    color: #000;
+    color: #ffffff;
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -69,7 +70,7 @@
 .container-contacto a {
     text-decoration: none;
     cursor: pointer;
-    color: #000;
+    color: #000000;
 }
 
 #container_duoc_juegos img,
@@ -81,6 +82,32 @@
     max-width: 100%;
     width: 100%;
 }
+
+/*AÑADIR BOTON DE COMPRA A LAS CATEGORIAS*/
+
+.btn-outline-compra {
+color: #19c1db; 
+border-color: #19c1db;
+border-width: 3px;
+border-style: solid;
+border-radius: 10px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+width: 140px; /* Ancho del botón */
+height: 45px; /* Altura del botón */
+font-size: 16px;
+}
+
+.btn-outline-compra:hover {
+    background-color: #0ededa;
+    color: black;
+  }
+
+  .btn-outline-compra:active {
+    transform: scale(0.95); /* Cambio de tamaño del botón al hacer clic */
+  }
+
+
+/*AÑADIR BOTON*/
 
 
 
@@ -97,6 +124,9 @@
     max-width: 1000px;
     margin: auto;
 }
+
+
+
 
 .categorias img,
 .juegos-terror img,
