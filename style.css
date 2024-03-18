@@ -66,7 +66,8 @@
 .container-categoria-deportes a,
 .container-categoria-terror a,
 .container-categoria-simulacion a,
-.container-contacto a {
+.container-contacto a,
+.container-proximamente a {
     text-decoration: none;
     cursor: pointer;
     color: #000000;
@@ -77,7 +78,8 @@
 .container-catgoria-accion img,
 .container-categoria-deportes img,
 .container-categoria-terror img,
-.container-categoria-simulacion img {
+.container-categoria-simulacion img,
+.container-proximamente img {
     max-width: 100%;
     width: 100%;
 }
@@ -128,7 +130,8 @@ font-size: 16px;
 .juegos-aventuras img,
 .juegos-accion img,
 .juegos-deportes img,
-.juegos-simulacion img {
+.juegos-simulacion img,
+.juegos-proximamente img{
     max-width: 400px;
     transition: ease-in-out 0.5s;
     border-radius: 25px;
@@ -139,7 +142,8 @@ font-size: 16px;
 .juegos-terror img:hover,
 .juegos-accion img:hover,
 .juegos-deportes img:hover,
-.juegos-simulacion img:hover {
+.juegos-simulacion img:hover,
+.juegos-proximamente img:hover {
     transform: scale(1.05);
     transition: ease-in-out 0.5s;
     border-radius: 25px;
@@ -151,7 +155,8 @@ font-size: 16px;
 .juegos-terror p,
 .juegos-accion p,
 .juegos-deportes p,
-.juegos-simulacion p {
+.juegos-simulacion p, 
+.juegos-proximamente p{
     color: #000;
     font-family: "Anta", sans-serif;
     font-weight: 400;
@@ -169,7 +174,8 @@ font-size: 16px;
 .juegos-aventuras,
 .juegos-accion,
 .juegos-deportes,
-.juegos-simulacion {
+.juegos-simulacion,
+.juegos-proximamente {
     display: flex;
     max-width: 1200px;
     margin: auto;
@@ -181,7 +187,8 @@ font-size: 16px;
 .juegos-aventuras,
 .juegos-accion,
 .juegos-deportes,
-.juegos-simulacion {
+.juegos-simulacion,
+.juegos-proximamente {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -191,7 +198,8 @@ font-size: 16px;
 .juegos-aventuras img,
 .juegos-accion img,
 .juegos-deportes img,
-.juegos-simulacion img {
+.juegos-simulacion img,
+.juegos-proximamente img {
     max-height: 400px;
 }
 
@@ -222,7 +230,8 @@ font-size: 16px;
 .juegos-aventuras,
 .juegos-accion,
 .juegos-deportes,
-.juegos-simulacion {
+.juegos-simulacion,
+.juegos-proximamente {
     flex-direction:row;
 }
 }
